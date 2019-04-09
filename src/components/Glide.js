@@ -149,9 +149,10 @@ export default {
     if (this.bullet) {
       for (let i = 0; i < this.slidesCount; i++) {
         buttons.push(
-          h('button', {
+          h('a', {
             key: i,
             attrs: {
+              'href': '#',
               'data-glide-dir': '=' + i,
               class: 'glide__bullet'
             }
